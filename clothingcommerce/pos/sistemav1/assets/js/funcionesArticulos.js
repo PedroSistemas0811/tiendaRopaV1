@@ -206,9 +206,7 @@ $('#busquedaart1').click(function(event) {
 });
 
 const validacionesFrontArticulos {
-    validaNuevo : function(){
-        
-    }
+   
 }
 
 function limpiarPrincipal() {
