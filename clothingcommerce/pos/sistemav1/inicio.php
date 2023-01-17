@@ -12,7 +12,7 @@ require_once('include/session.php');
     <meta name="author" content="Pedro">
     <link rel="icon" href="img/farmazon.jpg">
 
-    <title>CallCenter - Dashboard</title>
+    <title>Tienda de Ropa - Inicio</title>
 
     <!-- Custom fonts for this template-->
 
