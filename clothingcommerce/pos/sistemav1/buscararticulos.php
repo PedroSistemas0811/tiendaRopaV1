@@ -90,7 +90,7 @@
                         </div>
 <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
 <script type="text/javascript" src="assets/js/regis.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="assets/js/funcionesArticulos.js"></script>
 
 </script>
 </body>

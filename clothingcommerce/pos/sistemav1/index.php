@@ -90,7 +90,7 @@ session_start();
     <script type="text/javascript" src="assets/packageSweetAlert/dist/sweetalert2.all.js"></script>
     <script type="text/javascript" src="assets/js/jquery-1.12.3.js"></script>
     <script type="text/javascript" src="assets/js/regis.js"></script>
-    
+    <script type="text/javascript" src="assets/js/funcionesArticulos.js"></script>
 
     
 
