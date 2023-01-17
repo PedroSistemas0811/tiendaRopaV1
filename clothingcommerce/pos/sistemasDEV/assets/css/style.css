@@ -1,0 +1,210 @@
+/* ---------- GENERAL ---------- */
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  
+  color: #999;
+  font: 400 16px/1.5em sans-serif;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+h5 {
+  margin: 0;
+
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1dabb8;
+}
+
+fieldset {
+  border-top: none;
+  margin: 1;
+}
+
+input {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.superbody{
+  
+
+
+}
+
+.container {
+  /*background-image: url("img/farma.png");*/
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+  .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: 1s all;
+        opacity: 0;
+    }
+    .loading.show {
+        opacity: 1;
+    }
+    .loading .spin {
+        border: 3px solid hsla(185, 100%, 62%, 0.2);
+        border-top-color: #3cefff;
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    } 
+
+/* ---------- LOGIN-FORM ---------- */
+#login-form {
+  width: 500px;
+
+}
+
+#login-form h3 {
+  background-color: #cc0000;
+  border-radius: 10px 10px 10px 10px;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px;
+  text-align: center;
+  
+}
+#login-form h5 {
+  
+  background-color: #333c87;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#login-form fieldset {
+  background: #fff;
+
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  position: relative;
+}
+
+#login-form fieldset:before {
+  background-color: #fff;
+  content: "";
+  height: 8px;
+  left: 50%;
+  margin: -4px 0 0 -4px;
+  position: absolute;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 8px;
+}
+
+#login-form input {
+  font-size: 25px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+  border: 3px solid #dcdcdc;
+  padding: 10px 8px;
+  width: 90%;
+  position: center;
+}
+
+#login-form input[type="text"] {
+  border-radius: 3px 3px 0 0;
+  margin: 20px;
+}
+
+#login-form input[type="password"] {
+  margin: 20px;
+  border-radius: 0px 0px 3px 3px;
+}
+
+#login-form input[type="submit"] {
+  background: #333c87;
+  border-radius: 5px;
+  color: #fff;
+  float: center;
+  font-weight: bold;
+  margin-top: 20px;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+#login-form input[type="submit"]:hover {
+  background: rgb(37, 36, 64);
+}
+
+#login-form footer {
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.info {
+  background: #e5e5e5;
+  border-radius: 50%;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 10px 0 0;
+  text-align: center;
+  width: 20px;
+}
+
