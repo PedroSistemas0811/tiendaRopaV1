@@ -205,8 +205,10 @@ $('#busquedaart1').click(function(event) {
     });
 });
 
-const validacionesFrontArticulos {
-   
+const validacionesFrontArticulos ={
+    validaNuevo : function(){
+        
+    }
 }
 
 function limpiarPrincipal() {
