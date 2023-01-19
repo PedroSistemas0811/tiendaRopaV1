@@ -60,7 +60,7 @@ require_once('include/session.php');
                                     <div class="text-xs font-weight-bold text-success text-uppercase mb-0">Clave de Producto</div>
                                      <div class="form-group row">
                                     <div class="col-sm-4 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="txtCodigoArticulo" id="txtCodigoArticulo"
+                                        <input type="text" class="form-control form-control-user" id="txtCodigoArticulo" name="txtCodigoArticulo"
                                           onblur="funcionesArticulos.buscarArticulo(this)" placeholder="">
                                     </div>
                                     <div class="col-sm-2 mb-3 mb-sm-0">
