@@ -98,7 +98,7 @@ const funcionesArticulos = {
             },
             success: function(data) {
                 if (data.result) {
-                    
+
                    return data;
 
                 } else {
@@ -245,12 +245,6 @@ $('#busquedaart1').click(function(event) {
         }
     });
 });
-
-const validacionesFrontArticulos ={
-    validaNuevo : function(){
-        
-    }
-}
 
 function limpiarPrincipal() {
     articuloEditar = new Productos();
