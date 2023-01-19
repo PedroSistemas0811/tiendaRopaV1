@@ -1,4 +1,3 @@
-
 const funcionesArticulos = {
     showInfoProducto: function(dar) {
         articuloEditar = new Productos();
@@ -188,7 +187,6 @@ const funcionesArticulos = {
 
     }
 }
-
 
 const callArticulos = {
     editProduct: function(articuloPosicion) {
