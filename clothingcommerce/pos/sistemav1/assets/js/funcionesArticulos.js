@@ -98,12 +98,8 @@ const funcionesArticulos = {
             },
             success: function(data) {
                 if (data.result) {
-                    $('#txt_modeloArticulo').val(data.modelo);
-                    $('#txt_marcaArticulo').val(data.marca);
-                    $('#txt_tallaArticulo').val(data.talla);
-                    $('#txt_descripcionArticulo').val(data.descripcion);
-                    $('#txt_colorArticulo').val(data.color);
-                    $('#txt_precioArticulo').val(data.precio);
+                    
+                   return data;
 
                 } else {
                     Swal.fire({
@@ -127,6 +123,51 @@ const funcionesArticulos = {
             }
         });
     },
+    buscarArticulo :  (idArticulo) =>  { 
+        let inputArticulo = idArticulo;
+        let item_id = item_id.val();
+        if (item_id!==''){
+          $.ajax({
+          url: 'data/get_catalogo.php',
+          type: 'post',
+          dataType: 'json',
+          data: {
+            claveArticulo:item_id
+          },
+          success: function (data) {
+            if (data.encontrado){
+              $('#text_modeloArticulo').val(data.modelo);
+              $('#text_marcaArticulo').val(data.marca);
+              $('#text_tallaArticulo').val(data.talla);
+              $('#text_descripArticulo').val(data.descripcion);
+              $('#text_colorArticulo').val(data.color);
+              $('#text_precioArticulo').val(data.precio);
+              $inputArticulo.focus();
+            }else{
+                limpiaArticuloVentas();
+                Swal.fire({
+                      position: 'top-center',
+                      icon: 'error',
+                      title: 'No encontrado 404. No se encontró el articulo.',
+                      showConfirmButton: true
+            })
+            
+            }
+          },
+          error: function(){
+             limpiaArticuloVentas();
+            Swal.fire({
+                      position: 'top-center',
+                      icon: 'error',
+                      title: 'Error 500: La clave ingresada no existe.',
+                      showConfirmButton: true
+            })
+          }
+        });  
+        }
+        
+      
+      },
     showCarrusel: function() {
         var activo = "activo=" + $('#txtCodigoArticulo').val();
         $.ajax({
